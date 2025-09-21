@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+
+:root {
+    --mainColor: #1F977D;
+    --mainColorHover: #2dd6b4;
+    --dark: #494949;
+    --light: #c8c8c8;
+}
+
+
+.light-mode {
+    --mainColor: #1F977D;
+    --mainColorHover: #2dd6b4;
+    --dark: #f5f5f5;
+    --light: #333333;
+}
+
+/* Пример обновления стилей под светлую тему */
+.light-mode body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.light-mode a {
+    color: var(--light);
+}
+
+.light-mode .buttonAbout {
+    background-color: var(--mainColor);
+    color: var(--light);
+}
+
+.light-mode .buttonAbout:hover {
+    background-color: var(--light);
+    color: var(--mainColor);
+}
+
+.light-mode header {
+    background-color: var(--dark);
+}
+
+.light-mode .liHardSkills {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+
+* {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#about {
+    scroll-margin-top: 400px; /* или высота вашего header */
+}
+
+#skills, #projects, #contact {
+    scroll-margin-top: 250px; /* или высота вашего header */
+}
+
+body {
+    background-color: var(--dark);
+    padding-top: 12rem;
+    color: var(--light);
+    font-family: Merriweather, serif;
+}
+
+
+
+nav, ol, ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+/* Базовый стиль для анимации */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Класс, который добавляется при появлении */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+.languages a img {
+    width: 3.5rem;
+    height: 2.25rem;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--mainColor);
+    transition: 0.3s;
+}
+
+.header-iconBox {
+    margin-left: 20rem;
+}
+
+.headerToggle {
+    margin-right: 20rem;
+}
+
+header {
+    /* Тень */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* опционально: скругление углов */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--dark);
+}
+
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* можно настроить как нужно */
+    margin-top: -2.5rem;
+
+
+    /* Тень */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* опционально: скругление углов */
+}
+
+.header-icon {
+    background-image: url('../img/icon-light.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header-icon:hover {
+    background-image: url('../img/icon.png');
+    transition: 0.3s;
+}
+
+.toggle-switch {
+    background-image: url('../img/sun-light.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.toggle-switch:hover {
+    background-image: url('../img/sun.png');
+    transition: 0.3s;
+}
+
+main {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.aboutDiv {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1About {
+    font-size: 2.5rem;
+}
+
+.h2About {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--light);
+}
+
+
+.h3About {
+    font-size: 1.2rem;
+}
+
+.buttonAbout {
+    padding: 0.5rem 1rem;
+    background-color: var(--mainColor);
+    border-radius: 2rem;
+}
+
+.buttonAbout:hover {
+    background-color: var(--light);
+    text-decoration: none;
+}
+
+.imgAbout {
+    margin-left: 10rem;
+}
+
+.textAbout {
+    margin-top: -1rem;
+}
+
+.aboutImg {
+    border-radius: 20%;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.skillsDiv {
+    text-align: center;
+}
+
+.buttonChangeSelector {
+    width: 11rem;
+    height: 6rem;
+    background-color: var(--mainColor);
+    color: var(--light);
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: -0.3rem;
+    border: 1px solid var(--mainColor);
+
+}
+
+.buttonChangeSelector:hover {
+    background-color: var(--light);
+    color: var(--mainColor);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid var(--mainColor);
+
+}
+
+.divSoftSkills {
+    display: none;
+}
+
+.firstBtn {
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+
+}
+
+.active {
+    background-color: var(--light);
+    color: var(--mainColor);
+}
+
+.secondBtn {
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+
+
+}
+
+.ulHardSkills {
+    display: block;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.liHardSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    border-radius: 2rem;
+    width: 40rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease; /* Плавный переход тени */
+    text-wrap: balance;
+}
+
+.liHardSkills:hover {
+    box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hrSkills {
+    rotate: 90deg;
+    width: 6rem;
+}
+
+.h1Projects {
+    font-size: 2rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.ulProjects {
+    display: block;
+    text-align: center;
+}
+
+.ulDivProject {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.liProject {
+    width: 70rem;
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgDivLiProjects{
+    background-image: url('../img/artmirCutSize.png');
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 30px;
+    margin-left: 5rem;
+}
+
+.inLiDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inLiText {
+    justify-content: start;
+    margin-left: 3rem;
+}
+
+.inLiText h3, h6{
+    display: flex;
+    justify-content: start;
+}
+
+.inLiText h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.inLiText h6 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+
+.boxLiProjects {
+    background-color: var(--mainColor);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 0.3rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+.boxLiProjects:hover {
+    box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.boxLiProjectsTechno div img {
+    width: 3rem;
+    height: 3rem;
+
+
+}
+
+.boxLiProjectsTechno div{
+    background-color: var(--dark);
+    box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.boxLiProjectsTechno a{
+
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.boxLiProjectsTechno div:hover {
+    border: 2px solid var(--mainColor);
+}
+
+.boxLiProjectsTechno {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.js {
+    padding: 0.3rem ;
+}
+
+.secondD {
+    background-image: url("../img/forumPHPCutSize.png");
+}
+
+.thirdD {
+    background-image: url("../img/snsCutSize.png");
+}
+
+.ulContact {
+    display: flex;
+    justify-content: center;
+}
+
+.contactDiv {
+    margin-top: 8rem;
+}
+
+.liContact {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.h1Contact {
+    font-size: 1.8rem;
+    text-wrap: wrap;
+    margin-left: 2rem;
+
+}
+
+b {
+    color: var(--mainColor);
+    font-size: 2rem;
+}
+
+.socialMedia p {
+    margin-top: 5rem;
+    margin-left: 13rem;
+}
+
+.socialMedia div {
+    margin-top: 3rem;
+
+}
+
+/* === Мобильные устройства (до 768px) === */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 87.5%; /* 14px */
+    }
+
+    header .header_container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .header-iconBox {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .headerToggle {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .aboutDiv {
+        flex-direction: column;
+        margin-top: 8rem;
+        align-items: flex-start;
+    }
+
+    .imgAbout {
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .h1About {
+        font-size: 2rem;
+    }
+
+    .h2About {
+        font-size: 1.2rem;
+    }
+
+    .h3About {
+        font-size: 1rem;
+    }
+
+    .buttonAbout {
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+    }
+
+    #skills {
+        margin-top: 10rem;
+    }
+
+    .ulHardSkills {
+        margin-left: 0;
+    }
+
+    .liHardSkills {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .h1Projects {
+        font-size: 1.5rem;
+        margin-top: 6rem;
+    }
+
+    .liProject {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .imgDivLiProjects {
+        width: 100%;
+        height: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    .inLiText {
+        margin-left: 0;
+    }
+
+    .boxLiProjectsTechno {
+        justify-content: flex-start;
+    }
+
+    .languages {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .socialMedia p {
+        margin-left: 0;
+    }
+
+    .contactDiv {
+        margin-top: 6rem;
+    }
+
+    .h1Contact {
+        font-size: 1.5rem;
+        margin-left: 0;
+
+    }
+
+
+
+    .liContact {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+
+/* === Очень маленькие устройства (до 480px) === */
+@media (max-width: 480px) {
+
+    html {
+        font-size: 81.25%; /* 13px */
+    }
+
+    .h1About {
+        font-size: 1.8rem;
+    }
+
+    .h2About {
+        font-size: 1rem;
+    }
+
+    .buttonAbout {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .languages a img {
+        width: 2.5rem;
+        height: auto;
+    }
+
+    .boxLiProjects {
+        width: 100%;
+    }
+
+    .boxLiProjectsTechno div {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .boxLiProjectsTechno div img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .buttonChangeSelector {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
