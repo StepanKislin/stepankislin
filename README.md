@@ -21,6 +21,7 @@
 - Java, JavaFX
 - Android SDK
 - C++
+- Git
 - Adobe Photoshop, Adobe Illustrator, Figma, GIMP, Affinity Designer и т.д.
 
 ### Языки:
