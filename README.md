@@ -29,7 +29,7 @@
 - **Инструменты дизайна**: Figma, Adobe Photoshop, Illustrator, Affinity Designer, GIMP
 
 ### ⚙️ Бэкенд
-- **Языки**: PHP, Node.js, Python, Java  
+- **Языки**: PHP, Node.js, Python, Java, Goland (GO)
 - **Базы данных**: MySQL  
 - **Форматы данных**: JSON, XML  
 - **Документирование API**: Swagger (OpenAPI)  
@@ -44,6 +44,7 @@
 - Базовые знания C++ (алгоритмы, структуры данных)  
 - Работа с RESTful API и формами  
 - Адаптивная и кросс-браузерная вёрстка
+- Bash Shell
 
 ---
 
