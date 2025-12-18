@@ -50,7 +50,7 @@
 
 ## 🌍 Языки
 
-- **Русский** — родной  
+- **Русский** — носитель
 - **Английский** — B1 (Intermediate): чтение документации, общение в GitHub, понимание технических терминов  
 - **Китайский** — HSK 1: базовые фразы, интерес к культуре и дальнейшему изучению
 
@@ -85,7 +85,7 @@
 - 📧 **Email**: [s_kislin@mail.ru](mailto:s_kislin@mail.ru)  
 - 💼 **LinkedIn**: [Stepan Kislin](https://www.linkedin.com/in/stepan-kislin-2b530a360/)  
 - 🐱 **GitHub**: [github.com/StepanKislin](https://github.com/StepanKislin)  
-- 📱 **Telegram**: [t.me/skislin_dev](https://t.me/skislin_dev)  
+- 📱 **Telegram**: [t.me/stepankislinlime](https://t.me/skislin_dev)  
 - 🌐 **VK**: [vk.com/skislin](https://vk.com/skislin)
 
 ---
