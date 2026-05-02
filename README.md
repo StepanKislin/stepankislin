@@ -98,9 +98,11 @@
 
 <div align="center">
   <h3>📈 FinTech / Аналитика</h3>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" height="36" alt="Excel" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="36" alt="Pandas" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="36" alt="NumPy" />
-  <img src="https://cdn.simpleicons.org/stripe/008CDD" height="36" alt="Stripe" />
+  <img src="https://cdn.simpleicons.org/microsoftexcel/217346" height="36" alt="Microsoft Excel" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="36" alt="Google Sheets" />
 </div>
 
 <br />
