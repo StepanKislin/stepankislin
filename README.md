@@ -43,6 +43,8 @@
 <p>
   <img src="https://img.shields.io/badge/Web-Frontend-2962FF?style=for-the-badge&logo=html5&logoColor=white" alt="Frontend" />
   <img src="https://img.shields.io/badge/Web-Backend-FF0080?style=for-the-badge&logo=node.js&logoColor=white" alt="Backend" />
+  <img src="https://img.shields.io/badge/Data-Excel%20Analytics-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel Analytics" />
+  <img src="https://img.shields.io/badge/Data-Visualization-FF6D00?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="Data Visualization" />
   <img src="https://img.shields.io/badge/Mobile-Android-00C853?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/FinTech-Payments-00E5FF?style=for-the-badge&logo=stripe&logoColor=111827" alt="FinTech Payments" />
   <img src="https://img.shields.io/badge/DB-MySQL-FFD600?style=for-the-badge&logo=mysql&logoColor=111827" alt="MySQL" />
@@ -97,12 +99,21 @@
 <br />
 
 <div align="center">
-  <h3>📈 FinTech / Аналитика</h3>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" height="36" alt="Excel" />
+  <h3>📊 Excel / Аналитика</h3>
+  <img src="https://cdn.simpleicons.org/googlesheets/34A853" height="36" alt="Google Sheets" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="36" alt="Pandas" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="36" alt="NumPy" />
-  <img src="https://cdn.simpleicons.org/microsoftexcel/217346" height="36" alt="Microsoft Excel" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="36" alt="Google Sheets" />
+  <img src="https://cdn.simpleicons.org/jupyter/F37626" height="36" alt="Jupyter" />
+  <img src="https://cdn.simpleicons.org/chartdotjs/FF6384" height="36" alt="Chart.js" />
+</div>
+
+<br />
+
+<div align="center">
+  <h3>📈 FinTech / Платежи</h3>
+  <img src="https://cdn.simpleicons.org/stripe/008CDD" height="36" alt="Stripe" />
+  <img src="https://cdn.simpleicons.org/visa/1A1F71" height="36" alt="Visa" />
+  <img src="https://cdn.simpleicons.org/mastercard/EB001B" height="36" alt="Mastercard" />
 </div>
 
 <br />
