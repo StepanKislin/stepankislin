@@ -99,7 +99,7 @@
 <br />
 
 <div align="center">
-  <h3>📊 Excel / Аналитика</h3>
+  <h3>📊 Аналитика</h3>
   <img src="https://cdn.simpleicons.org/googlesheets/34A853" height="36" alt="Google Sheets" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="36" alt="Pandas" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="36" alt="NumPy" />
