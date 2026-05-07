@@ -174,8 +174,8 @@
 ## 📊 GitHub активность
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=StepanKislin&show_icons=true&rank_icon=github&theme=radical&hide_border=true" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=StepanKislin&layout=compact&theme=radical&hide_border=true" alt="Top languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=StepanKislin&theme=radical" alt="GitHub stats" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=StepanKislin&theme=radical&layout=compact" alt="Top languages" />
 </p>
 
 ---
